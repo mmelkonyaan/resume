@@ -3,71 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mikhail Resume</title>
 </head>
 <body>
 
-    <img src="avatar.jpg" alt="Фотография Мелконян Михаила" width="200">
+    <div class="container">
+        
+        <div class="info">
+            <img src="avatar.jpg" class="avatar" alt="Фотография Мелконян Михаила">
 
-    <h1>Михаил Мелконян</h1>
-    <p>Я изучаю <strong>Frontend</strong> и являюсь <strong>Junior Frontend Developer</strong>.</p>
-    <p>Мне нравятся <i>путешествия, занимаюсь спортом</i> и <b> I love programmer</b>.</p>
-    <b>Список соц. сетей:</b>
-    <p><b><a href="#" target="_blank">Instagram*</a></b> | <b><a href="https://t.me/mmelkonyaan" target="_blank">Telegram(личная странница)</a></b></p>
+            <div class="info-text">
+                <h1>Михаил Мелконян</h1>
+                <p>Я изучаю <strong>Frontend</strong> и являюсь <strong>Junior Frontend Developer</strong>.</p>
+                <p>Мне нравятся <i>путешествия, занимаюсь спортом</i> и <b> I love programmer</b>.</p>
+                <b>Список соц. сетей:</b>
+                <p class="social"><b><a href="#" target="_blank">Instagram*</a></b> | <b><a href="https://t.me/mmelkonyaan" target="_blank">Telegram(личная странница)</a></b></p>    
+            </div>
+        </div>    
 
-    <!-- <hr> -->
-
-    * организация, деятельность которой запрещена на территории Российской Федерации.
-
-    <h2>Мои хобби</h2>
-    <ul>
-        <li>Путешествия</li>
-        <li>Бокс</li>
-        <li>Кавказские танцы</li>
-        <li>Настольный теннис</li>
-        <li>Бильярд</li>
-    </ul>
-
-
-    <h2>Опыт работы</h2>
-
-    <table width="500">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Edelveis dance</td>
-                <td>Frontend Developer</td>
-                <td>январь 2023 - декабрь 2024</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-        <div style="margin: 10px;">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+        <div class="card bg-grey">
+            <h2>Мои хобби</h2>
+            <ol class="list-hobby">
+                <li>Путешествия</li>
+                <li>Бокс</li>
+                <li>Кавказские танцы</li>
+                <li>Настольный теннис</li>
+                <li>Бильярд</li>
+            </ol>
         </div>
 
-        <div style="margin: 10px;">
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+
+        <div class="card bg-brown">
+            <h2>Опыт работы</h2>
+
+            <table width="500" class="table-work">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Edelveis dance</td>
+                        <td>Frontend Developer</td>
+                        <td>январь 2023 - декабрь 2024</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div style="margin: 10px;">
-            <label for="massege">Ваше сообщение:</label>
-            <br><br>
-            <textarea id="massege" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+        <div class="card bg-blue">
+            <h2>Мои курсы</h2>
+            <ul class="list-course">
+                <li>Джуниор Frontend-разработчик</li>
+                <li>Основы HTML&CSS </li>
+                <li>Основы JavaScript</li>
+                <li>Марафон JavaScript "5 дней - 5 проектов"</li>
+                <li>WEb-разработчик</li>
+            </ul>
         </div>
 
-        <button type="submit">Отправить</button>
-    </form>
+        <div class="commun">
+            <h2>Связаться со мной</h2>
+
+            <form>
+                <div class="comun-row">
+                    <div class="comun-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+    
+                    <div class="comun-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="comun-message">
+                    <div style="margin: 10px;">
+                        <label for="massege">Ваше сообщение:</label>
+                        <textarea id="massege" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="btn" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+
+        
+        <hr>
+
+        <p class="stars">* организация, деятельность которой запрещена на территории Российской Федерации.</p>
+
+    </div>
+    
 </body>
 </html>
